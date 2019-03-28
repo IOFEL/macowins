@@ -1,4 +1,4 @@
-package forma1;
+package solucioncatedra.clases;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,9 +17,5 @@ class NegocioTest {
 
     @Test
     void vender() {
-    }
-
-    @Test
-    void gananciasDeUnPeriodo() {
     }
 }

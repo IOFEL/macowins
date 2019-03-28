@@ -1,12 +1,16 @@
-package forma1;
+package solucioncatedra.clases;
 
-import interfaces.IEstado;
-import interfaces.IPrenda;
+import solucioncatedra.interfaces.Estado;
 
-public class Prenda implements IPrenda {
+public class Prenda{
 
     private double precioBase;
-    private IEstado estado;
+    private Estado estado;
+
+    public Prenda(double precioBase, Estado estado){
+        this.precioBase = precioBase;
+        this.estado = estado;
+    }
 
     public double precioBase() {
         return precioBase;
@@ -16,11 +20,11 @@ public class Prenda implements IPrenda {
         this.precioBase = precioBase;
     }
 
-    public IEstado estado() {
+    public Estado estado() {
         return estado;
     }
 
-    public void cambiarEstado(IEstado estado){
+    public void cambiarEstado(Estado estado){
         this.estado = estado;
     }
 

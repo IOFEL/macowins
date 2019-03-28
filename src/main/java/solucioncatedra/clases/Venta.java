@@ -1,14 +1,11 @@
-package forma1;
-
-import interfaces.IItem;
-import interfaces.IVenta;
+package solucioncatedra.clases;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Venta implements IVenta {
-    private List<IItem> items;
+public class Venta {
+    private List<Item> items;
     private LocalDate fecha;
 
     public Venta(LocalDate fecha){
@@ -21,10 +18,10 @@ public class Venta implements IVenta {
     }
 
     public double importe(){
-        return items.stream().mapToDouble(IItem::importe).sum();
+        return items.stream().mapToDouble(Item::importe).sum();
     }
 
-    public void agregarItem(IItem item){
+    public void agregarItem(Item item){
         items.add(item);
     }
 }

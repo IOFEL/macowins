@@ -1,4 +1,4 @@
-package forma1;
+package solucioncatedra.clases;
 
 import java.time.LocalDate;
 

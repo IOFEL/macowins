@@ -1,8 +1,6 @@
-package forma1;
+package solucioncatedra.clases;
 
-import interfaces.IItem;
-
-public class Item implements IItem {
+public class Item {
     private int cantidad;
     private Prenda prenda;
 

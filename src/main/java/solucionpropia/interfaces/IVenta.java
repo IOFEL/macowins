@@ -1,4 +1,4 @@
-package interfaces;
+package solucionpropia.interfaces;
 
 import java.time.LocalDate;
 
